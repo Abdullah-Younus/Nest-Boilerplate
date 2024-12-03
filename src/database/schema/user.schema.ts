@@ -38,6 +38,9 @@ export class User {
     @Prop()
     resetPassword: string;
 
+    @Prop()
+    fcmToken: string;
+
 }
 
 export type UserDocument = User & Document;

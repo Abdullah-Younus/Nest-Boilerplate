@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ErrorLoggingFilter } from './common/exception-filters/error-logging.filter';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { LoggerInterceptor } from './common/interceptors/logger.Interceptor';

@@ -1,7 +1,7 @@
 import { HttpException, Injectable } from "@nestjs/common";
 import { Response } from "express";
 import * as bcrypt from 'bcrypt';
-import { ApiResponse } from "src/interfaces";
+import { ApiResponse } from "src/common/interfaces";
 import { Types } from "mongoose";
 import { sign } from 'jsonwebtoken';
 import { User } from "src/database/schema/user.schema";
