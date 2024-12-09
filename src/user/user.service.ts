@@ -30,9 +30,10 @@ export class UserService {
         }
     }
 
-    async findOne(filter: RootFilterQuery<User>, projection: ProjectionType<User> | null, options?: QueryOptions<User> | null) {
-        return await this.userModel.findOne(filter, projection, options);
+    findOne(filter?: RootFilterQuery<User>, projection?: ProjectionType<User> | null, options?: QueryOptions<User> | null) {
+        return this.userModel.findOne(filter, projection, options);
     }
+
 
     async updateUser(user: string, updateUserDto: UpdateUserDTO) {
         const userObj = await this.userModel.findById(user);
