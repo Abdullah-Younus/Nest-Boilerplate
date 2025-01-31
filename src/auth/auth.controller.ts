@@ -11,7 +11,6 @@ import { UtilsService } from "src/utils/utils.service";
 
 @Controller('auth')
 export class AuthController {
-
     constructor(
         private readonly authService: AuthService,
         private readonly userService: UserService,

@@ -34,7 +34,6 @@ export class UserService {
         return this.userModel.findOne(filter, projection, options);
     }
 
-
     async updateUser(user: string, updateUserDto: UpdateUserDTO) {
         const userObj = await this.userModel.findById(user);
         if (!userObj) this.utilService.throwException('User not found', 404);
